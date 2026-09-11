@@ -35,6 +35,7 @@ class BooksTest < ApplicationSystemTestCase
   test "should destroy Book" do
     visit book_url(@book)
     click_on "Destroy this book", match: :first
+    click_on "Yes, delete this book"
 
     assert_text "Book was successfully destroyed"
   end
